@@ -24,7 +24,7 @@ discussions:
 author:
   name: "Gabriel Waegner"
   role: "Software Developer"
-  education: "Your Second Role or Field of Study"
+  education: "B.S. Computer Science, Arizona State University"
   location: "Stevenson Ranch, California, USA"
   email: ""
   avatar: "/images/profile.svg"
@@ -46,9 +46,9 @@ languages:
 
 appearance:
   accent_color: "#2b2b2b"
-  recent_items_on_home: 5
-  background_pattern: "grid"
-  theme_mode: "auto"
+  # recent_items_on_home: 5
+  background_pattern: "none"
+  theme_mode: "dark"
   font_style: "default"
 
 plugins:
