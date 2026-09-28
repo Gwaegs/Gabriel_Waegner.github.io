@@ -1,10 +1,10 @@
 locale: "en-US"
-title: "Your Name"
+title: "Gabriel Waegner"
 description: "Software Engineer and Researcher"
-url: "https://yourname.github.io"
+url: "https://gwaegs.github.io"
 baseurl: ""
-repository: "yourname/yourname.github.io"
-timezone: "Europe/Rome"
+repository: "Gwaegs/gwaegs.github.io"
+timezone: "Pacific Standard Time"
 logo: "/images/profile.svg"
 
 template:
@@ -22,15 +22,15 @@ discussions:
   category_id: ""
 
 author:
-  name: "Your Name"
-  role: "Your Role"
+  name: "Gabriel Waegner"
+  role: "Software Developer"
   education: "Your Second Role or Field of Study"
-  location: "Your City, Country"
+  location: "Stevenson Ranch, California, USA"
   email: ""
   avatar: "/images/profile.svg"
   cv: ""
-  github: "https://github.com/yourname"
-  linkedin: "https://www.linkedin.com/in/yourname"
+  github: "https://github.com/Gwaegs"
+  linkedin: "https://www.linkedin.com/in/gabriel-waegner-511b0819a/"
   scholar: ""
   orcid: ""
 
