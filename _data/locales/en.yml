@@ -4,7 +4,8 @@ navigation:
       url: "/"
     - title: "Projects"
       url: "/work/"
-  contact: "Contact"
+    - title: "Contact"
+      url: "/contact/"
   cv: "Resume"
 
 about:
