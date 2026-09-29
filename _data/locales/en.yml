@@ -8,9 +8,9 @@ navigation:
   cv: "Resume"
 
 about:
-  - "I'm a [your role], focused on [your main area of expertise]."
-  - "My work spans [field one], [field two], and [field three]. I'm particularly interested in [the topics you care about]."
-  - "Here you'll find a selection of the projects and articles I've worked on."
+  - "I'm a software developer with professional experience building scientific and engineering software."
+  - "My work has included C++, Python, Fortran, JavaScript/React, C#, simulation software, and REST APIs."
+  - "Outside of professional work, I develop game modifications that involve runtime scripting, debugging, reverse engineering, and experimentation with unfamiliar systems."
 
 about_page:
   title: "About me"
