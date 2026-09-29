@@ -22,21 +22,6 @@
         {% if site.author.email and site.author.email != '' %}<a class="page-link" href="mailto:{{ site.author.email }}">{{ t.navigation.contact }}</a>{% endif %}
         {% if site.author.cv and site.author.cv != '' %}<a class="page-link nav-cv" href="{{ site.author.cv | relative_url }}">{{ t.navigation.cv }}</a>{% endif %}
       </div>
-      <div class="nav-utility">
-        <div class="lang-switch">
-          {% for lang in site.languages.available %}
-            {% unless lang.code == current_lang %}
-              {% assign target_url = nil %}
-              {% if page.slug %}
-                {% assign translation = site.pages | where: 'slug', page.slug | where: 'lang', lang.code | first %}
-                {% if translation %}{% assign target_url = translation.url %}{% endif %}
-              {% endif %}
-              {% unless target_url %}{% assign target_url = lang.home_url %}{% endunless %}
-              <a class="page-link lang-link" href="{{ target_url | relative_url }}" title="{{ t.accessibility.language_switch_prefix }} {{ lang.label }}">{{ lang.label }}</a>
-            {% endunless %}
-          {% endfor %}
-        </div>
-      </div>
     </nav>
   </div>
 </header>
