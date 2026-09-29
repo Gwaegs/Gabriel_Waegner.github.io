@@ -2,16 +2,10 @@ navigation:
   main:
     - title: "Home"
       url: "/"
-    - title: "About"
-      url: "/about/"
     - title: "Projects"
       url: "/work/"
-    - title: "Writing"
-      url: "/writing/"
-    - title: "Archive"
-      url: "/archive/"
   contact: "Contact"
-  cv: "CV"
+  cv: "Resume"
 
 about:
   - "I'm a [your role], focused on [your main area of expertise]."
