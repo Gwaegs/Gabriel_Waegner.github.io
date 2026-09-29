@@ -6,9 +6,17 @@
 <div class="profile">
   {% if site.author.avatar and site.author.avatar != '' %}<img class="profile-photo" src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.name }} {{ t.accessibility.profile_photo_suffix }}">{% endif %}
   <div>
-    {% if site.author.name and site.author.name != '' %}<h1>{{ site.author.name }}</h1>{% endif %}
-    {% if site.author.role != '' or site.author.education != '' or site.author.location != '' %}<p>{% if site.author.role and site.author.role != '' %}<b>{{ site.author.role }}.</b>{% endif %} {% if site.author.education and site.author.education != '' %}<b>{{ site.author.education }}.</b>{% endif %} {% if site.author.location and site.author.location != '' %}<b>{{ site.author.location }}.</b>{% endif %}</p>{% endif %}
-    {% if site.author.email and site.author.email != '' %}<p class="small"><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>{% endif %}
+    {% if site.author.role and site.author.role != '' %}
+      <p><b>{{ site.author.role }}</b></p>
+    {% endif %}
+    
+    {% if site.author.education and site.author.education != '' %}
+      <p>{{ site.author.education }}</p>
+    {% endif %}
+    
+    {% if site.author.location and site.author.location != '' %}
+      <p>{{ site.author.location }}</p>
+    {% endif %}
   </div>
 </div>
 
