@@ -23,12 +23,33 @@
 <h2 class="section-title no-rule">{{ t.home.about_title }}</h2>
 <div class="about-text">{% for paragraph in t.about %}<p>{{ paragraph }}</p>{% endfor %}</div>
 
-{% if lang_entries.size > 0 %}
-<h2 class="section-title">{{ t.home.recent_title }}</h2>
-<p class="section-intro">{{ t.home.recent_intro }}</p>
-<div class="recent-list">
-  {% assign recent = lang_entries | sort: 'date' | reverse %}
-  {% for entry in recent limit: site.appearance.recent_items_on_home %}{% include recent-entry.html item=entry %}{% endfor %}
-</div>
+<h2 class="section-title">Education</h2>
+
+<p>
+  <strong>B.S. Computer Science, magna cum laude</strong><br>
+  Arizona State University, 2022
+</p>
+
+<p>
+  <strong>Certificate in Game Design</strong><br>
+  Arizona State University, 2022
+</p>
+
+<h2 class="section-title">Skills</h2>
+
+<p>
+  <strong>Languages:</strong>
+  C++, C#, Python, Fortran, Java, JavaScript, HTML, SQL
+</p>
+
+<p>
+  <strong>Technologies:</strong>
+  React, REST APIs, Docker, Lua, Git
+</p>
+
+<p>
+  <strong>Programs:</strong>
+  Unity, Unreal, PGAdmin, Ubuntu, Visual Studio
+</p>
 <p class="more-link"><a href="{{ t.home.archive_url | relative_url }}">{{ t.home.archive_link }}</a></p>
 {% endif %}
