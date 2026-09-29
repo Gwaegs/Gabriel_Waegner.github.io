@@ -19,7 +19,6 @@
           {% if link.url contains 'archive/' and lang_content_count == 0 %}{% assign hide_link = true %}{% endif %}
           {% unless hide_link %}<a class="page-link{% if page.url == link.url %} is-current{% endif %}" href="{{ link.url | relative_url }}">{{ link.title }}</a>{% endunless %}
         {% endfor %}
-        {% if site.author.email and site.author.email != '' %}<a class="page-link" href="mailto:{{ site.author.email }}">{{ t.navigation.contact }}</a>{% endif %}
         {% if site.author.cv and site.author.cv != '' %}<a class="page-link nav-cv" href="{{ site.author.cv | relative_url }}">{{ t.navigation.cv }}</a>{% endif %}
       </div>
     </nav>
