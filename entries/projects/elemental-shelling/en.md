@@ -27,11 +27,11 @@ Gunlance has three shelling types—Normal, Long, and Wide—that modify the beh
 
 I wanted Long to offer a reason to build and play Gunlance differently rather than functioning primarily as another variation of the same shelling system.
 
-Elemental shelling provided that avenue. Standard shelling does not inherit the equipped weapon's elemental damage, which limits how much Gunlance can engage with elemental weapons, skills, and matchup-specific builds. By making Long shelling scale with weapon element, I could address both problems at once: give Long a unique identity and introduce a new category of Gunlance builds.
+Elemental shelling provided that avenue. Standard shelling does not inherit the equipped weapon's elemental damage, which limits how much Gunlance can engage with elemental weapons, skills, and matchup-specific builds. By making Long shelling scale with weapon element, I could address both problems at once: give Long a unique identity and introduce a new genre of Gunlance builds.
 
 ## My Contribution
 
-I designed the intended elemental-shelling behavior, damage model, Long-specific identity, and interactions with existing game systems.
+I was the sole contributor, designing the intended elemental-shelling behavior, damage model, Long-specific identity, and interactions with existing game systems.
 
 I investigated the game's weapon data and runtime behavior using unpacked game files, diagnostic scripts, runtime logging, and testing. This involved identifying the parameters responsible for shelling damage, determining where weapon element could be introduced into the damage calculation, locating the data used to distinguish shelling types, and testing how those systems behaved over different Gunlances and equipment contexts.
 
@@ -57,7 +57,7 @@ I used a similar runtime-investigation process, this time logging subroutines th
 
 I then added a condition to the elemental-shelling logic so that the damage modification occurred only when the equipped weapon was a Gunlance using the Long shelling type.
 
-*Monster Hunter Wilds* introduced an additional complication through its weapon-crafting system. Element-focused crafted Gunlances normally received Wide shelling, while I wanted them to become a natural source of Long elemental weapons. A second modification therefore detects the appropriate crafted Gunlances and substitutes their Wide shelling identifier with Long before the elemental-shelling check occurs.
+There was a complication unique to *Monster Hunter Wilds* however: Element-focused crafted Gunlances normally received Wide shelling, while I wanted them to become a natural source of Long elemental weapons. A second modification therefore detects the appropriate crafted Gunlances and substitutes their Wide shelling identifier with Long before the elemental-shelling check occurs.
 
 I tested the behavior across multiple Gunlance and equip methods, making small adjustments to ensure both the shelling-type override and elemental-damage calculation remained consistent.
 
