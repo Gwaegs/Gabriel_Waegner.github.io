@@ -11,7 +11,7 @@ show_cover: false
 label: "ROLE"
 role: "Gameplay Systems Design, Runtime Investigation, Testing & Balance Analysis"
 technologies: [Lua, REFramework]
-code: ""
+code: "https://github.com/Gwaegs/Elemental-Long-and-Scorching-Wide"
 demo: ""
 paper: ""
 excerpt: "A gameplay rebalance for the Long-type Gunlance in Monster Hunter Wilds that adds weapon-element scaling to Gunlance's unique shelling attacks."
@@ -36,6 +36,12 @@ I was the sole contributor, designing the intended elemental-shelling behavior, 
 I investigated the game's weapon data and runtime behavior using unpacked game files, diagnostic scripts, runtime logging, and testing. This involved identifying the parameters responsible for shelling damage, determining where weapon element could be introduced into the damage calculation, locating the data used to distinguish shelling types, and testing how those systems behaved over different Gunlances and equipment contexts.
 
 I then oversaw the implementation through runtime hooks and Lua scripts, and modifications to load-time weapon data. Additionally, I evaluated in-game behavior, diagnosed results, and iterated until the implementation aligned with intended game behavior and the weapon-performance metrics I targeted through numerical analysis.
+
+## Relevant Files
+
+- **Edited Asset:** `natives/STM/GameDesign/Player/ActionData/Wp07/GlobalParam/Wp07GlobalActionParam.user.3`
+- **Elemental Long Lua scripts:** `gl_override`, `gog_manager`, `v2_shelling_override`
+- **Installation Guide:** `README.txt`
 
 ### Step 1: Enabling Elemental Shelling
 
