@@ -11,7 +11,6 @@ layout: site
 {% assign cover_image = page.cover | default: page.image %}
 <article class="content-page case-study-page">
   <header class="case-study-header">
-    <p class="post-date">{{ t.content.case_study_label }} {{ page.year }}</p>
     {% if cover_image and cover_image != '' and page.show_cover != false %}
       <figure class="case-study-cover">
         <img class="project-hero" src="{{ cover_image | relative_url }}" alt="{{ page.cover_alt | default: page.title }}">
