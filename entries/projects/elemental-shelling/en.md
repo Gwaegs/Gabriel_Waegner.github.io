@@ -43,6 +43,8 @@ I then oversaw the implementation through runtime hooks and Lua scripts, and mod
 - **Elemental Long Lua scripts:** `gl_override`, `gog_manager`, `v2_shelling_override`
 - **Installation Guide:** `README.txt`
 
+## Process
+
 ### Step 1: Enabling Elemental Shelling
 
 Using tools created by other mod developers, I unpacked the game's weapon data and found the values tied to Gunlance shelling attacks. No simple flag enabled weapon-element damage. Instead, shells contained a fixed amount of fire damage that didn't scale with the weapon's elemental value or element type.
