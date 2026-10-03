@@ -41,11 +41,12 @@ work:
   intro: "Selected software development, game systems, and technical projects."
   count_label: "PROJECTS"
   default_role_label: "ROLE"
-  case_study_link: "View Case Study →"\n  code_label: "Code ↗"
+  case_study_link: ""
+  code_label: "Code ↗"
   demo_label: "Live demo ↗"
   paper_label: "Paper ↗"
   project_label: "Project"
-  empty: "No projects published yet."
+  empty: ""
 
 writing:
   title: "Writing"
