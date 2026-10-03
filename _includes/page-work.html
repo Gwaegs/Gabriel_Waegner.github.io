@@ -8,9 +8,11 @@
   </div>
 </div>
 {% if projects.size > 0 %}
+{% assign elemental_shelling = site.pages | where: "slug", "elemental-shelling" | first %}
+{% assign scorching_wide = site.pages | where: "slug", "scorching-wide" | first %}
 <div class="project-card-grid">
-  {% include work-entry.html item=elemental-shelling %}
-  {% include work-entry.html item=scorching-wide %}
+  {% include work-entry.html item=scorching_wide %}
+  {% include work-entry.html item=elemental_shelling %}
 </div>
 {% else %}
 <p>{{ t.work.empty }}</p>
