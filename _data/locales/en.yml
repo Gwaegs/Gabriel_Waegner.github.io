@@ -38,10 +38,10 @@ home:
 
 work:
   title: "Projects"
-  intro: "Selected academic and professional work."
+  intro: "Selected software development, game systems, and technical projects."
   count_label: "PROJECTS"
   default_role_label: "ROLE"
-  code_label: "Code ↗"
+  case_study_link: "View Case Study →"\n  code_label: "Code ↗"
   demo_label: "Live demo ↗"
   paper_label: "Paper ↗"
   project_label: "Project"
