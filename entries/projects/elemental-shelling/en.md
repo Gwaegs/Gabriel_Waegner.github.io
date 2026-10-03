@@ -42,6 +42,7 @@ I then oversaw the implementation through runtime hooks and Lua scripts, and mod
 - **Edited Asset:** `natives/STM/GameDesign/Player/ActionData/Wp07/GlobalParam/Wp07GlobalActionParam.user.3`
 - **Elemental Long Lua scripts:** `gl_override`, `gog_manager`, `v2_shelling_override`
 - **Installation Guide:** `README.txt`
+- **Mod Page:** [Nexus Mods](https://www.nexusmods.com/monsterhunterwilds/mods/4674)
 
 ## Process
 
