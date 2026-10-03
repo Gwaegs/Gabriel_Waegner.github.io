@@ -10,7 +10,9 @@
 {% if projects.size > 0 %}
 <div class="project-card-grid">
   {% for project in projects %}
-    {% include work-entry.html item=project %}
+    {% unless project.slug == 'example-project' %}
+      {% include work-entry.html item=project %}
+    {% endunless %}
   {% endfor %}
 </div>
 {% else %}
