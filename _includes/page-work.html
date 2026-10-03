@@ -9,11 +9,8 @@
 </div>
 {% if projects.size > 0 %}
 <div class="project-card-grid">
-  {% for project in projects %}
-    {% unless project.slug == 'example-project' %}
-      {% include work-entry.html item=project %}
-    {% endunless %}
-  {% endfor %}
+  {% include work-entry.html item=elemental-shelling %}
+  {% include work-entry.html item=scorching-wide %}
 </div>
 {% else %}
 <p>{{ t.work.empty }}</p>
