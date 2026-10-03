@@ -42,6 +42,7 @@ I once again oversaw the runtime hooks and Lua scripts, and spent extensive time
 - **Edited Asset:** `natives/STM/GameDesign/Player/ActionData/Wp07/GlobalParam/Wp07GlobalActionParam.user.3`
 - **Heat Blade Wide Lua scripts:** `gl_override`, `gog_manager`, `v1_heat_blade`
 - **Installation Guide:** `README.txt`
+- **Mod Page:** [Nexus Mods](https://www.nexusmods.com/monsterhunterwilds/mods/4958)
 
 ## Process
 
